@@ -10,15 +10,33 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AnimState.cs" t="Include" />
-          <e p="BackgroundData.cs" t="Include" />
-          <e p="IInit.cs" t="Include" />
-          <e p="IUpdate.cs" t="Include" />
-          <e p="LevelObjectView.cs" t="Include" />
+          <e p="Bullet.cs" t="Include" />
+          <e p="Config" t="Include">
+            <e p="BackgroundData.cs" t="Include" />
+            <e p="SpriteAnimatorConfig.cs" t="Include" />
+          </e>
+          <e p="Controller" t="Include">
+            <e p="AimingMuzzle.cs" t="Include" />
+            <e p="BulletsEmitter.cs" t="Include" />
+            <e p="PalaraxManager.cs" t="Include" />
+            <e p="PlayerMove.cs" t="Include" />
+            <e p="SpriteAnimator.cs" t="Include" />
+          </e>
+          <e p="Enums" t="Include">
+            <e p="AnimState.cs" t="Include" />
+          </e>
+          <e p="Interface" t="Include">
+            <e p="IInit.cs" t="Include" />
+            <e p="IUpdate.cs" t="Include" />
+          </e>
           <e p="MainClass.cs" t="Include" />
-          <e p="PalaraxManager.cs" t="Include" />
-          <e p="SpriteAnimator.cs" t="Include" />
-          <e p="SpriteAnimatorConfig.cs" t="Include" />
+          <e p="Utils" t="Include">
+            <e p="UtilsVectors.cs" t="Include" />
+          </e>
+          <e p="View" t="Include">
+            <e p="BulletView.cs" t="Include" />
+            <e p="LevelObjectView.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
