@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a49d01be6bd2443a885f01b54bc575a3, type: 3}
   m_Name: BackgroundCfg
   m_EditorClassIdentifier: 
-  _backGround: {fileID: -4650604187696802176, guid: 0ad31b3b62136d54fafd120d1f9b5492,
-    type: 3}
+  _groundLayers:
+    Layers:
+    - {fileID: 2996060555557084116, guid: 354ee83e4258870468d7d739c6b2c557, type: 3}
+    - {fileID: 7925417447299464105, guid: ba96a66a952b47d47b41aac9adf81f3a, type: 3}
+    - {fileID: 2105279692364161063, guid: 9b9e1696406c0f749b12948127b25863, type: 3}
+    - {fileID: 2106325561920128406, guid: 9a692d38e55eb3a42bfe92948b46e6fa, type: 3}
+    - {fileID: 2322418316343408053, guid: 21ce964ebd3407745ba20d41e0484388, type: 3}
   _offsetBackground: {x: 0, y: 0, z: 0}
   _cameraStartPosition: {x: 0, y: 0, z: 0}
-  _coeficientMovingBackground: 0.3
+  _coeficientMovingBackground: 1.4
