@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace PlatformerMvc
 {
-    public class SpriteAnimator : IUpdate, IDisposable
+    public class SpriteAnimatorController : IUpdate, IDisposable
     {
         private sealed class Animator : IUpdate
         {
@@ -39,7 +39,7 @@ namespace PlatformerMvc
         private SpriteAnimatorConfig _config;
         private Dictionary<SpriteRenderer, Animator> _activeAnimation = new Dictionary<SpriteRenderer, Animator>();
 
-        public SpriteAnimator(SpriteAnimatorConfig config)
+        public SpriteAnimatorController(SpriteAnimatorConfig config)
         {
             _config = config;
         }
