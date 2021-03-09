@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Interface;
 using UnityEngine;
 
 
@@ -8,56 +9,64 @@ namespace PlatformerMvc
     {
         [SerializeField]
         private Camera _camera;
-        
-        [SerializeField]
-        private LevelObjectView _playerView;
 
         [SerializeField]
-        private Transform _muzzelTurel;
+        private LevelObjectView _playerView;
         
+        [SerializeField] 
+        private CannonView _cannon;
+
         [SerializeField]
         private int _animationSpeed = 10;
 
-        private SpriteAnimator _playerAnimator;
+        [SerializeField]
+        private List<LevelObjectView> _coinsList;
+
+        private SpriteAnimatorController _playerAnimatorController;
+        private SpriteAnimatorController _coinAnimatorController;
         private PalaraxManager _palaraxManager;
 
         private List<IInit> _inits;
         private List<IUpdate> _updaters;
-        private PlayerMove _playerController;
-
+        private List<IFixedUpdate> _fixedUpdaters;
+        private MainHeroPhysicsWalker _playerController;
+        private CannonAimController _cannonAim;
+        private BulletsEmitterController _bulletEmitterController;
+        private CoinsManager _coinsManager;
+        
         private void Awake()
         {
             _inits = new List<IInit>();
             _updaters = new List<IUpdate>();
+            _fixedUpdaters = new List<IFixedUpdate>();
 
             var backgroundData = Resources.Load<BackgroundData>("BackgroundCfg");
             _palaraxManager = new PalaraxManager(backgroundData, _camera.transform);
-            _inits.Add(_palaraxManager);
-            _updaters.Add(_palaraxManager);
 
             var playerConfig = Resources.Load<SpriteAnimatorConfig>("AnimPlayerCfg");
-            _playerAnimator = new SpriteAnimator(playerConfig);
-            _playerAnimator.StartAnimation(_playerView._spriteRenderer, AnimState.Run, true, _animationSpeed);
-            _playerController = new PlayerMove(_playerView, _playerAnimator);
+            _playerAnimatorController = new SpriteAnimatorController(playerConfig);
+            _playerAnimatorController.StartAnimation(_playerView._spriteRenderer, AnimState.Run, true, _animationSpeed);
+            _playerController = new MainHeroPhysicsWalker(_playerView, _playerAnimatorController);
 
-            var aimingMuzzle = new AimingMuzzle(_muzzelTurel, _playerView._transform);
+            _cannonAim = new CannonAimController(_cannon._muzzleTransform, _playerView.transform);
+            _bulletEmitterController = new BulletsEmitterController(_cannon._bullets, _cannon._emitterTransform);
 
-            List<BulletView> bulletList = new List<BulletView>()
-            {
-                Object.Instantiate(Resources.Load<BulletView>("bullet"), Vector3.zero, Quaternion.identity),
-                Object.Instantiate(Resources.Load<BulletView>("bullet"), Vector3.zero, Quaternion.identity),
-                Object.Instantiate(Resources.Load<BulletView>("bullet"), Vector3.zero, Quaternion.identity),
-                Object.Instantiate(Resources.Load<BulletView>("bullet"), Vector3.zero, Quaternion.identity),
-                Object.Instantiate(Resources.Load<BulletView>("bullet"), Vector3.zero, Quaternion.identity),
-                Object.Instantiate(Resources.Load<BulletView>("bullet"), Vector3.zero, Quaternion.identity)
-            };
-            var bulletEmiter = new BulletsEmitter(bulletList, _muzzelTurel);
+            var cameraController = new CameraController(Camera.main, _playerView._transform);
+
+            var coinConfig = Resources.Load<SpriteAnimatorConfig>("CoinConfig");
+            _coinAnimatorController = new SpriteAnimatorController(coinConfig);
             
-            _updaters.Add(_playerAnimator);
-            _updaters.Add(_playerController);
-            _updaters.Add(aimingMuzzle);
-            _updaters.Add(bulletEmiter);
-
+            _coinsManager = new CoinsManager(_playerView, _coinsList, _coinAnimatorController);
+            
+            
+            _inits.Add(_palaraxManager);
+            _updaters.Add(_palaraxManager);
+            _updaters.Add(_playerAnimatorController);
+            _updaters.Add(_coinAnimatorController);
+            _updaters.Add(cameraController);
+            _updaters.Add(_cannonAim);
+            _updaters.Add(_bulletEmitterController);
+            _fixedUpdaters.Add(_playerController);
             Init();
         }
 
@@ -79,6 +88,10 @@ namespace PlatformerMvc
 
         private void FixedUpdate()
         {
+            foreach (var updater in _fixedUpdaters)
+            {
+                updater.FixedUpdate();
+            }
         }
     }
 }

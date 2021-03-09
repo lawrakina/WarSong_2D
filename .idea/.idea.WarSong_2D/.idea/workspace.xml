@@ -20,46 +20,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46b52bd1-b0b3-4ede-9763-bd06ccb79e47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Config.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/AimingMuzzle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/AimingMuzzle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/BulletsEmitter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/BulletsEmitter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMove.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMove.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enums.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interface.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/UtilsVectors.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/UtilsVectors.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/View.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/View/BulletView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/View/BulletView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/BulletController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/BulletsEmitterController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/CameraController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/CameraController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/CannonAimController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/CannonAimController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/CoinsManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/CoinsManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/ContactPoller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/ContactPoller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/MainHeroPhysicsWalker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IFixedUpdate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IFixedUpdate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/View/CannonView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/View/CannonView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WarSong_2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WarSong_2D/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WarSong_2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WarSong_2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/BackgroundCfg.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/BackgroundCfg.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/Coin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/Coin.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/4x/image 9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGrounds/Skyis.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGrounds/Skyis.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Resources/bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Resources/bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Resources/bullet.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Resources/bullet.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/AnimState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/AnimState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackgroundData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Config/BackgroundData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackgroundData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Config/BackgroundData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IInit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IInit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IInit.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IInit.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IUpdate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IUpdate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IUpdate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IUpdate.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelObjectView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/LevelObjectView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelObjectView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/LevelObjectView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/BulletController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/AimingMuzzle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/AimingMuzzle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/BulletsEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/BulletsEmitterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/BulletsEmitter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMove.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/MainHeroPhysicsWalker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/SpriteAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/SpriteAnimatorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/SpriteAnimator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/SpriteAnimatorController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PalaraxManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/PalaraxManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PalaraxManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/PalaraxManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpriteAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/SpriteAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpriteAnimator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/SpriteAnimator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpriteAnimatorConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Config/SpriteAnimatorConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpriteAnimatorConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Config/SpriteAnimatorConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/UtilsVectors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/UtilsVectors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/BulletView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/BulletView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/LevelObjectView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/LevelObjectView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,19 +83,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IInit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMove.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/BulletsEmitter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IFixedUpdate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainClass.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/SpriteAnimator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/BulletView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/97/761765c6/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B1BD7821-A9BD-482C-8BEC-887040B89E43/69/f48488c6/Collider2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/SpriteAnimatorController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/UtilsVectors.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/AimingMuzzle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/BulletsEmitterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ContactPoller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CannonAimController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/LevelObjectView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IInit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/MainHeroPhysicsWalker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/BulletController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CoinsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/CannonView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Config/BackgroundData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IUpdate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17AD9609-AE06-4F2C-9315-931FF97ADCF1/e1/f20a6e84/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Config/SpriteAnimatorConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/LevelObjectView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/PalaraxManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -97,13 +117,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BackGrounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PalaraxManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BackgroundData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/UtilsVectors.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AimingMuzzle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletsEmitter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IFixedUpdate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/UtilsVectors.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/MainHeroPhysicsWalker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/ContactPoller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PhysicsBullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/BulletsEmitter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/SpriteAnimatorController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/LevelObjectView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletsEmitterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/CannonAimController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/CannonView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/BulletView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/BulletsEmitterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/BulletController.cs" />
       </list>
     </option>
   </component>
@@ -148,7 +182,10 @@
       <updated>1614163156751</updated>
       <workItem from="1614163164655" duration="10196000" />
       <workItem from="1614318779945" duration="327000" />
-      <workItem from="1614581396678" duration="6044000" />
+      <workItem from="1614581396678" duration="6449000" />
+      <workItem from="1614848218404" duration="616000" />
+      <workItem from="1614925973130" duration="7127000" />
+      <workItem from="1615266857408" duration="8719000" />
     </task>
     <servers />
   </component>
